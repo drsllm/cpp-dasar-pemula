@@ -76,6 +76,17 @@ function initNavigation() {
       pindahTab(moduleOrder[0]);
     }
   });
+
+  const btnBackToTop = document.getElementById('btn-back-to-top');
+  if (btnBackToTop) {
+    btnBackToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const mainContent = document.querySelector('.main-content');
+      if (mainContent) {
+        mainContent.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
 }
 
 function pindahTab(targetId) {
@@ -106,6 +117,10 @@ function pindahTab(targetId) {
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  const mainContent = document.querySelector('.main-content');
+  if (mainContent) {
+    mainContent.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 // ----------------------------------------------------------------------------

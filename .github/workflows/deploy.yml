@@ -1,0 +1,20 @@
+name: Auto Deploy to Ubuntu Server (Self-Hosted Runner)
+
+# Trigger workflow setiap kali ada push ke branch main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    # Menggunakan self-hosted runner yang berjalan langsung di server Ubuntu Anda
+    # (Tidak butuh IP Publik, SSH Key eksternal, atau Port Forwarding!)
+    runs-on: self-hosted
+
+    steps:
+      - name: Tarik Pembaruan Kode Terakhir (Git Pull)
+        run: |
+          cd /var/www/cpp-dasar
+          git pull origin main
+          sudo systemctl reload nginx

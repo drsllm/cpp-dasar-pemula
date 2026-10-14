@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C++ Guided Lab - Panduan Dasar Pemrograman Pemula</title>
-  <meta name="description" content="Laboratorium interaktif panduan belajar dasar C++: variabel, tipe data, input-output, aritmatika, percabangan logika, dan array 1 dimensi.">
+  <meta name="description"
+    content="Laboratorium interaktif panduan belajar dasar C++: variabel, tipe data, input-output, aritmatika, percabangan logika, dan array 1 dimensi.">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="app-container">
     <!-- SIDEBAR NAVIGATION -->
@@ -105,8 +111,9 @@
           <div class="hero-badge">Mengapa Harus Ada Panduan Ini?</div>
           <h2>Banyak pemula bingung saat melihat kodingan tanpa memahami "anatomi"-nya.</h2>
           <p>
-            Di lab ini, Anda akan dipandu memahami <strong>7 pondasi mutlak</strong> pemrograman. 
-            Setiap konsep memiliki analogi nyata, visualisasi memori RAM komputer, dan simulasi interaktif yang bisa langsung Anda coba!
+            Di lab ini, Anda akan dipandu memahami <strong>7 pondasi mutlak</strong> pemrograman.
+            Setiap konsep memiliki analogi nyata, visualisasi memori RAM komputer, dan simulasi interaktif yang bisa
+            langsung Anda coba!
           </p>
         </div>
 
@@ -123,7 +130,8 @@
             <div class="step-num">02</div>
             <div class="step-icon">🖥️</div>
             <h3>Menampilkan Hasil</h3>
-            <p>Mengenal <code>cout</code>, aliran stream operator <code>&lt;&lt;</code>, serta beda <code>endl</code> dan <code>\n</code>.</p>
+            <p>Mengenal <code>cout</code>, aliran stream operator <code>&lt;&lt;</code>, serta beda <code>endl</code>
+              dan <code>\n</code>.</p>
             <span class="step-link">Buka Materi ➔</span>
           </div>
 
@@ -131,7 +139,8 @@
             <div class="step-num">03</div>
             <div class="step-icon">⌨️</div>
             <h3>Menginputkan Data</h3>
-            <p>Menangkap ketikan pengguna keyboard dengan <code>cin &gt;&gt;</code> dan <code>getline</code> untuk teks berspasi.</p>
+            <p>Menangkap ketikan pengguna keyboard dengan <code>cin &gt;&gt;</code> dan <code>getline</code> untuk teks
+              berspasi.</p>
             <span class="step-link">Buka Materi ➔</span>
           </div>
 
@@ -139,7 +148,8 @@
             <div class="step-num">04</div>
             <div class="step-icon">🧮</div>
             <h3>Operasi Perhitungan</h3>
-            <p>Aritmatika komputer (+, -, *, /, %), keanehan pembagian integer (5/2=2), dan cara mengubahnya jadi desimal.</p>
+            <p>Aritmatika komputer (+, -, *, /, %), keanehan pembagian integer (5/2=2), dan cara mengubahnya jadi
+              desimal.</p>
             <span class="step-link">Buka Materi ➔</span>
           </div>
 
@@ -147,7 +157,8 @@
             <div class="step-num">05</div>
             <div class="step-icon">🔀</div>
             <h3>Logika & Percabangan</h3>
-            <p>Memberi komputer kemampuan mengambil keputusan dengan <code>if</code>, <code>else if</code>, dan <code>else</code>.</p>
+            <p>Memberi komputer kemampuan mengambil keputusan dengan <code>if</code>, <code>else if</code>, dan
+              <code>else</code>.</p>
             <span class="step-link">Buka Materi ➔</span>
           </div>
 
@@ -165,7 +176,8 @@
             <h3>Siap memulai perjalanan koding Anda?</h3>
             <p>Mulai dari membedah anatomi kode dasar C++ agar tidak asing dengan sintaks template-nya.</p>
           </div>
-          <button class="action-btn primary large" onclick="pindahTab('modul-anatomi')">Mulai dari Anatomi C++ ➔</button>
+          <button class="action-btn primary large" onclick="pindahTab('modul-anatomi')">Mulai dari Anatomi C++
+            ➔</button>
         </div>
       </section>
 
@@ -201,7 +213,9 @@
           <div class="explanation-box" id="anatomy-explanation">
             <div class="expl-icon">💡</div>
             <h3 id="anatomy-title">Klik salah satu baris kode di samping kiri!</h3>
-            <p id="anatomy-desc">Arahkan kursor atau klik baris kode seperti <code>#include &lt;iostream&gt;</code>, <code>using namespace std;</code>, atau <code>int main()</code> untuk melihat penjelasan detilnya di sini.</p>
+            <p id="anatomy-desc">Arahkan kursor atau klik baris kode seperti <code>#include &lt;iostream&gt;</code>,
+              <code>using namespace std;</code>, atau <code>int main()</code> untuk melihat penjelasan detilnya di sini.
+            </p>
           </div>
         </div>
       </section>
@@ -211,7 +225,8 @@
         <div class="guide-banner">
           <span class="banner-tag">BAB 1</span>
           <h2>Variabel: Kotak Wadah Penyimpan di Memori RAM</h2>
-          <p>Komputer tidak memiliki mata untuk melihat barang, tetapi punya memori RAM untuk menyimpan nilai dalam kotak bernama.</p>
+          <p>Komputer tidak memiliki mata untuk melihat barang, tetapi punya memori RAM untuk menyimpan nilai dalam
+            kotak bernama.</p>
         </div>
 
         <div class="split-view">
@@ -265,7 +280,7 @@
           <div class="view-panel highlight-panel">
             <h3>Simulasi Wadah Memori Interaktif</h3>
             <p>Ubah nilai di bawah ini, dan lihat bagaimana variabel di memori diperbarui!</p>
-            
+
             <div class="interactive-form">
               <div class="form-group">
                 <label>Nama Variabel: <code>namaSiswa</code> (string)</label>
@@ -313,7 +328,8 @@ char golonganDarah = 'O';</code>
         <div class="guide-banner">
           <span class="banner-tag">BAB 2</span>
           <h2>Menampilkan Hasil ke Layar: Konsep 'cout' dan Operator '&lt;&lt;'</h2>
-          <p>Karakter <code>&lt;&lt;</code> melambangkan panah arah aliran data dari program Anda menuju ke layar monitor (konsol).</p>
+          <p>Karakter <code>&lt;&lt;</code> melambangkan panah arah aliran data dari program Anda menuju ke layar
+            monitor (konsol).</p>
         </div>
 
         <div class="split-view">
@@ -370,7 +386,7 @@ char golonganDarah = 'O';</code>
           <div class="view-panel highlight-panel">
             <h3>Simulator Output Konsol</h3>
             <p>Ketik pesan Anda dan amati bagaimana perintah <code>cout</code> bekerja merangkai teks!</p>
-            
+
             <div class="form-group">
               <label>Ketik Kalimat 1:</label>
               <input type="text" id="out-text-1" value="Selamat pagi, Calon Programmer C++!">
@@ -408,7 +424,8 @@ char golonganDarah = 'O';</code>
         <div class="guide-banner">
           <span class="banner-tag">BAB 3</span>
           <h2>Menerima Masukan Data: 'cin' dan 'getline'</h2>
-          <p>Jika <code>cout</code> menggunakan panah ke kiri <code>&lt;&lt;</code>, maka <code>cin</code> menggunakan panah ke kanan <code>&gt;&gt;</code> karena data diserap dari keyboard masuk ke wadah variabel.</p>
+          <p>Jika <code>cout</code> menggunakan panah ke kiri <code>&lt;&lt;</code>, maka <code>cin</code> menggunakan
+            panah ke kanan <code>&gt;&gt;</code> karena data diserap dari keyboard masuk ke wadah variabel.</p>
         </div>
 
         <div class="split-view">
@@ -417,10 +434,12 @@ char golonganDarah = 'O';</code>
             <div class="alert-box warning">
               <h4>⚠️ Kapan menggunakan <code>cin &gt;&gt;</code> vs <code>getline</code>?</h4>
               <p>
-                <strong>1. <code>cin &gt;&gt; x;</code></strong> hanya membaca sampai menemukan spasi pertama. Jika Anda mengetik <code>"Budi Santoso"</code>, yang tertangkap hanya <code>"Budi"</code>!
+                <strong>1. <code>cin &gt;&gt; x;</code></strong> hanya membaca sampai menemukan spasi pertama. Jika Anda
+                mengetik <code>"Budi Santoso"</code>, yang tertangkap hanya <code>"Budi"</code>!
               </p>
               <p>
-                <strong>2. <code>getline(cin, x);</code></strong> membaca SELURUH baris sampai pengguna menekan tombol [Enter]. Cocok untuk nama lengkap, alamat, atau kalimat panjang.
+                <strong>2. <code>getline(cin, x);</code></strong> membaca SELURUH baris sampai pengguna menekan tombol
+                [Enter]. Cocok untuk nama lengkap, alamat, atau kalimat panjang.
               </p>
             </div>
 
@@ -451,7 +470,8 @@ char golonganDarah = 'O';</code>
                 <span class="terminal-dot"></span>
                 <span>Hasil Ekstraksi Variabel</span>
               </div>
-              <pre class="terminal-screen" id="terminal-screen-input">Ketik data di atas lalu klik tombol "Simulasikan Input ke C++" untuk melihat aliran variabel.</pre>
+              <pre class="terminal-screen"
+                id="terminal-screen-input">Ketik data di atas lalu klik tombol "Simulasikan Input ke C++" untuk melihat aliran variabel.</pre>
             </div>
 
             <div class="code-preview-card">
@@ -564,7 +584,8 @@ int sisaBagi = a % b;</code>
         <div class="guide-banner">
           <span class="banner-tag">BAB 5</span>
           <h2>Logika dan Percabangan (If - Else If - Else)</h2>
-          <p>Komputer mengambil keputusan seperti manusia: "JIKA syarat A terpenuhi, maka lakukan tindakan X, jika tidak, lakukan tindakan Y".</p>
+          <p>Komputer mengambil keputusan seperti manusia: "JIKA syarat A terpenuhi, maka lakukan tindakan X, jika
+            tidak, lakukan tindakan Y".</p>
         </div>
 
         <div class="split-view">
@@ -585,7 +606,8 @@ int sisaBagi = a % b;</code>
             <div class="alert-box warning" style="margin-top: 15px;">
               <h4>⚠️ Kesalahan Fatal Pemula: <code>=</code> vs <code>==</code></h4>
               <p><code>=</code> (satu tanda sama dengan) adalah untuk <strong>mengisi nilai</strong> (assignment).</p>
-              <p><code>==</code> (dua tanda sama dengan) adalah untuk <strong>membandingkan</strong> apakah dua nilai sama.</p>
+              <p><code>==</code> (dua tanda sama dengan) adalah untuk <strong>membandingkan</strong> apakah dua nilai
+                sama.</p>
             </div>
           </div>
 
@@ -628,7 +650,8 @@ int sisaBagi = a % b;</code>
         <div class="guide-banner">
           <span class="banner-tag">BAB 6</span>
           <h2>Struktur Data Array Dasar (1 Dimensi)</h2>
-          <p>Jika Anda memiliki 5 nilai, Anda tidak perlu membuat variabel <code>nilai1, nilai2, nilai3...</code>. Array menyimpannya dalam 1 deret memori!</p>
+          <p>Jika Anda memiliki 5 nilai, Anda tidak perlu membuat variabel <code>nilai1, nilai2, nilai3...</code>. Array
+            menyimpannya dalam 1 deret memori!</p>
         </div>
 
         <div class="split-view">
@@ -638,7 +661,8 @@ int sisaBagi = a % b;</code>
               <div class="law-badge">HUKUM #1</div>
               <div class="law-text">
                 <strong>Indeks SELALU Dimulai dari 0, Bukan 1!</strong>
-                <p>Jika array berukuran 5, maka slot indeksnya adalah: <code>[0]</code>, <code>[1]</code>, <code>[2]</code>, <code>[3]</code>, dan <code>[4]</code>.</p>
+                <p>Jika array berukuran 5, maka slot indeksnya adalah: <code>[0]</code>, <code>[1]</code>,
+                  <code>[2]</code>, <code>[3]</code>, dan <code>[4]</code>.</p>
               </div>
             </div>
 
@@ -646,7 +670,8 @@ int sisaBagi = a % b;</code>
               <div class="law-badge">HUKUM #2</div>
               <div class="law-text">
                 <strong>Tipe Data Harus Seragam</strong>
-                <p>Jika dideklarasikan <code>int arr[5]</code>, maka seluruh elemen di dalamnya harus berupa bilangan bulat.</p>
+                <p>Jika dideklarasikan <code>int arr[5]</code>, maka seluruh elemen di dalamnya harus berupa bilangan
+                  bulat.</p>
               </div>
             </div>
 
@@ -654,7 +679,8 @@ int sisaBagi = a % b;</code>
               <div class="law-badge">HUKUM #3</div>
               <div class="law-text">
                 <strong>Pasangan Ideal: Array dan Perulangan (For Loop)</strong>
-                <p>Loop <code>for (int i = 0; i &lt; ukuran; i++)</code> dipakai untuk mengunjungi setiap slot dari awal hingga akhir.</p>
+                <p>Loop <code>for (int i = 0; i &lt; ukuran; i++)</code> dipakai untuk mengunjungi setiap slot dari awal
+                  hingga akhir.</p>
               </div>
             </div>
           </div>
@@ -756,10 +782,13 @@ double rata = (double)total / 5;</code>
             <div class="integration-checklist">
               <h4>Komponen yang Berhasil Terintegrasi:</h4>
               <ul>
-                <li>✅ <strong>Variabel & Tipe Data:</strong> Menyimpan nama (string), nim (string), nilai (double), status (bool).</li>
-                <li>✅ <strong>Input/Output:</strong> Menerima data melalui <code>cin</code>/<code>getline</code> dan menampilkan dengan <code>cout</code>.</li>
+                <li>✅ <strong>Variabel & Tipe Data:</strong> Menyimpan nama (string), nim (string), nilai (double),
+                  status (bool).</li>
+                <li>✅ <strong>Input/Output:</strong> Menerima data melalui <code>cin</code>/<code>getline</code> dan
+                  menampilkan dengan <code>cout</code>.</li>
                 <li>✅ <strong>Aritmatika:</strong> Menghitung akumulasi total dan rata-rata pembagian.</li>
-                <li>✅ <strong>Logika Percabangan:</strong> Evaluasi nilai rata-rata untuk menentukan predikat (A/B/C/D) dan status kelulusan.</li>
+                <li>✅ <strong>Logika Percabangan:</strong> Evaluasi nilai rata-rata untuk menentukan predikat (A/B/C/D)
+                  dan status kelulusan.</li>
                 <li>✅ <strong>Array:</strong> Menyimpan 3 mata kuliah berurutan pada indeks [0], [1], dan [2].</li>
               </ul>
             </div>
@@ -791,7 +820,8 @@ double rata = (double)total / 5;</code>
         <div class="guide-banner">
           <span class="banner-tag">FILE SUMBER</span>
           <h2>Kode Sumber Lengkap C++ (belajar_dasar.cpp)</h2>
-          <p>Program C++ ini siap dikompilasi di Dev-C++, Code::Blocks, VS Code, atau OnlineGDB. Setiap baris sudah dilengkapi penjelasan.</p>
+          <p>Program C++ ini siap dikompilasi di Dev-C++, Code::Blocks, VS Code, atau OnlineGDB. Setiap baris sudah
+            dilengkapi penjelasan.</p>
         </div>
 
         <div class="source-actions">
@@ -808,4 +838,5 @@ double rata = (double)total / 5;</code>
 
   <script src="app.js"></script>
 </body>
+
 </html>
